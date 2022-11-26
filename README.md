@@ -53,5 +53,5 @@ To generate the tree files for all topologies in the newick folder, run:
 It will generate one directory for each newick tree in the `newick` directory.
 
 ## Example Directories
-
-
+We have added two example directories, `plant` and `fish`.
+Both of them have a `newick` directory and a download script for the `data` directory.
