@@ -2,13 +2,17 @@
 - `flex`
 - `bison`
 - `jellyfish`
-
+- `bash`
+- `python3`
+- `curl`
+- `g++`
+- `unzip`
 ## How to Use
 
 ### Download Dependencies
 In debian we can use the following command:
 ```
-sudo apt-get install flex bison jellyfish
+sudo apt-get install flex bison jellyfish g++ python3 curl unzip 
 ```
 
 ### Build Executables
@@ -47,4 +51,7 @@ To generate the tree files for all topologies in the newick folder, run:
 ./run species-name kmer-length number-of-samples
 ```
 It will generate one directory for each newick tree in the `newick` directory.
+
+## Example Directories
+
 
