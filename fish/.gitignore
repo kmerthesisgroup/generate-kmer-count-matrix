@@ -1,0 +1,6 @@
+data/*
+*.zip
+*.sh/
+*-fish-*-*/
+fish-*-*/
+
