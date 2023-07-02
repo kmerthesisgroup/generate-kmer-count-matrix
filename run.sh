@@ -11,7 +11,7 @@ for treefile in $(ls "$NEWICK_DIR")
 do 
 	echo $treefile 
 	basename=${treefile%.newick}
-	dir="$basename-$1-$2"
+	dir="$basename-$1-$2-$3"
 	mkdir -p "$dir"
 	cd "$dir"
 	../../parse-newick/newick "../$NEWICK_DIR/$treefile"
