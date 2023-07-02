@@ -12,7 +12,7 @@ do
 	echo $treefile 
 	basename=${treefile%.newick}
 	dir="$basename-$1-$2"
-	mkdir "$dir"
+	mkdir -p "$dir"
 	cd "$dir"
 	../../parse-newick/newick "../$NEWICK_DIR/$treefile"
 	../../parse-newick/relabel-tree.py --treefile "out.tree" --species-file "species_file" --relabel-file "../$MATRIX_DIR/species-file.txt" --out final.tree
