@@ -16,6 +16,7 @@ do
 	cd "$dir"
 	../../parse-newick/newick "../$NEWICK_DIR/$treefile"
 	../../parse-newick/relabel-tree.py --treefile "out.tree" --species-file "species_file" --relabel-file "../$MATRIX_DIR/species-file.txt" --out final.tree
+	cp "../$MATRIX_DIR/species-file.txt" final_species_file.txt
 	../../merge/merge.out final.tree "../$MATRIX_DIR/count-matrix.txt" > "final_tree.txt" 
 	cd ..
 done
