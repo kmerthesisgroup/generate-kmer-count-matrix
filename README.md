@@ -55,3 +55,8 @@ It will generate one directory for each newick tree in the `newick` directory.
 ## Example Directories
 We have added three example directories, `plant`, `fish` and `ecoli`.
 Both of them have a `newick` directory and a download script for the `data` directory.
+
+## Build A Docker Image
+```
+docker build -t kmerthssgrp/generate-kmer-count-matrix .
+```
