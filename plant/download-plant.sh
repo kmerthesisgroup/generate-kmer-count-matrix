@@ -1,7 +1,9 @@
 #!/bin/bash
 
-curl "http://afproject.org/media/genome/std/assembled/plants/dataset/assembled-plants.zip" \
+curl "https://afproject.org/media/genome/std/assembled/plants/dataset/assembled-plants.zip" \
 	--output plant.zip
+mkdir -p data
 unzip plant.zip
-mv assembled-plant data
+mv assembled-plant/* data
+rm -rf assembled-plant
 
