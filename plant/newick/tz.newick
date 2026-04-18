@@ -1,0 +1,41 @@
+(
+    (
+        papaya,
+        (
+            halophilu,
+            (
+                (
+                    parvulum,
+                    rapa
+                ),
+                (
+                    (
+                        thalian,
+                        lyrata
+                    ),
+                    rubella
+                )
+            )
+        )
+    ),
+    (
+        (
+            cacao,
+            (
+                vinifera,
+                (
+                    raimondii,
+                    (
+                        grandis,
+                        camaldule
+                    )
+                    
+                )
+            )
+        ),
+        (
+            sinensis,
+            clementin
+        )
+    )
+);
