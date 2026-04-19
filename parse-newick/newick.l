@@ -19,8 +19,8 @@ int column_offset = 1;
 
 %%
 [ \t\b\f\n\r\v] {}
-[^,:;\(\) \t\b\f\n\r\v][^,:;\(\)]* {
-	yylval.text = new char[sizeof(yytext)+1];
+[^,:;\(\) \t\b\f\n\r\v][^,:;\(\) \t\b\f\n\r\v]* {
+	yylval.text = new char[strlen(yytext)+1];
 	strcpy(yylval.text,yytext);
 	return WORD;
 	//printf("NAME: %s\n",yytext);
